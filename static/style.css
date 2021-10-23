@@ -250,3 +250,25 @@ i.menu-mobile {
   background: #fff;
   border-radius: 50;
 }
+
+/*estilizando a secao Portifolio - carousel*/
+.carousel-control-prev{
+  margin-left: -8rem;
+}
+.carousel-control-next{
+  margin-right: -8rem;
+}
+.carousel-indicators{
+  margin-bottom: -35px;
+}
+
+/*responsividade da secao Portifolio - carousel*/
+@media (max-width: 1860px){
+  .carousel-control-prev{
+    margin-left: 0;
+  }
+  
+  .carousel-control-next{
+    margin-right: 0;
+  }
+}
