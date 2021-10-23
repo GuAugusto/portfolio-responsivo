@@ -29,6 +29,8 @@ body {
   width: 120px;
   border: 8px solid #2c2f3f;
   border-radius: 50%;
+  width: 150px;
+  height: 150px;
 }
 
 /*Estilizando o texto dentro do menu*/
@@ -271,4 +273,5 @@ i.menu-mobile {
   .carousel-control-next{
     margin-right: 0;
   }
+
 }
