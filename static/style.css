@@ -308,3 +308,16 @@ i.menu-mobile {
     transform: translate3d(0, 100%, 0);
   }
 }
+
+/*Fazendo o botao de 'enviando' desaparecer*/
+#btn-enviar-loader{
+  display: none;
+}
+
+/*Fazendo o botao de 'enviando' aparecer no canto superior direito*/
+#alerta{
+  position: fixed;
+  z-index: 10;
+  top: 30px;
+  right: 30px;
+}

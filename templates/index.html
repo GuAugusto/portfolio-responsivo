@@ -18,7 +18,7 @@
 
     <aside id="header">
         <section class="profile">
-            <img src="../static/img/Foto Gustavo Perfil.jpg" alt="Foto do Gustavo" />
+            <img src="../static/img/Foto 4kkk.png" alt="Foto do Gustavo" />
             <h1>Gustavo Augusto</h1>
             <div class="social-links mt-4 text-center">
                 <a target="_blank" href="https://www.linkedin.com/in/gustavo-augusto-/">
@@ -109,7 +109,8 @@
 
             <div class="row mt-4">
                 <div class="col-md-4">
-                    <img class="img-fluid shadow" src="../static/img/Foto Gustavo Perfil.jpg" alt="foto do gustavo" data-anime="left">
+                    <img class="img-fluid shadow" src="../static/img/Foto 4kkk.png" alt="foto do gustavo"
+                        data-anime="left">
                 </div>
                 <div class="col-md-8" data-anime="right">
                     <h3>Desenvolvedor FullStack</h3>
@@ -376,7 +377,7 @@
                                         <img src="../static/img/plataforma-gen.png" class="card-img-top"
                                             alt="Plataforma educacional">
                                         <div class="card-body">
-                                            <h5 class="card-title">Plataforma educacional</h5>
+                                            <h5 class="card-title">Rede Social</h5>
                                             <p class="card-text">Projeto fullstack criado com MySQL, Spring e Angular,
                                                 acesso restrito, apenas pessoas autorizadas</p>
                                             <div class="d-flex justify-content-center">
@@ -504,6 +505,7 @@
             </div>
         </section>
 
+
         <section class="pt-5 pb-5" id="contato">
 
             <div class="container mb-5">
@@ -520,12 +522,15 @@
 
                             <div class="email">
                                 <h4><i class="bi bi-envelope"></i> Email:</h4>
-                                <p>gustavoaugusto77@hotmail.com</p>
+                                <p>docencia.thiago@gmail.com</p>
                             </div>
 
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.978539836605!2d-46.532331885019424!3d-23.712460384608168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce41ee35f384fd%3A0xee8bdca7df8ae110!2sAv.%20Luiz%20Pequini%20-%20S%C3%A3o%20Bernardo%20do%20Campo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1635017130036!5m2!1spt-BR!2sbr"
-                                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="w-100"></iframe>
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.0602062854546!2d-46.
+                                55922744119819!3d-23.673804835210053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4307634be811%3A0xf6bad5e9058a3ead!2sAv.
+                                %20Senador%20Vergueiro%20-%20S%C3%A3o%20Bernardo%20do%20Campo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1630183618134!5m2!1spt-BR!2sbr"
+                                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                class='w-100'></iframe>
                         </div>
                     </div>
 
@@ -545,7 +550,7 @@
                                 </div>
 
                                 <div class="col-12">
-                                    <label for="mensagem" class="form-label">Mensagewm:</label>
+                                    <label for="mensagem" class="form-label">Mensagem:</label>
                                     <textarea type="text" class="form-control" id="mensagem" name='mensagem' rows="10"
                                         placeholder="Digite sua mensagem" required></textarea>
                                 </div>
@@ -555,17 +560,32 @@
                                     <button id='btn-enviar' type="submit" class="btn btn-primary">Enviar
                                         mensagem</button>
 
-                                   
+                                    <button id='btn-enviar-loader' class="btn btn-primary" type="button" disabled>
+                                        <span class="spinner-border spinner-border-sm" role="status"
+                                            aria-hidden="true"></span>
+                                        Enviando...
+                                    </button>
                                 </div>
                             </form>
-
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </section>
+
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <div id="alerta" class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="bi bi-check-circle-fill"></i> {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+
 
     </main>
     <script src="../static/Boostrap/js/bootstrap.bundle.min.js"></script>

@@ -1,16 +1,16 @@
-// Abre e fecha menu lateral em modo mobile 
+/* Abre e fecha menu lateral em modo mobile */
 
-const menuMobile = document.querySelector('.menu-mobile')
-const body = document.querySelector('body')
+const menuMobile = document.querySelector(".menu-mobile");
+const body = document.querySelector("body");
 
-menuMobile.addEventListener('click', () => {
-    menuMobile.classList.contains("bi-list")
-        ? menuMobile.classList.replace("bi-list", "bi-x")
-        : menuMobile.classList.replace("bi-x", "bi-list");
-        body.classList.toggle("menu-nav-active");
+menuMobile.addEventListener("click", () => {
+  menuMobile.classList.contains("bi-list")
+    ? menuMobile.classList.replace("bi-list", "bi-x")
+    : menuMobile.classList.replace("bi-x", "bi-list");
+  body.classList.toggle("menu-nav-active");
 });
 
-// Vai fechar o menu quando clicar em algum item e mudar o icone para list 
+/* Fecha o menu quando clicar em algum item e muda o icone para list */
 
 const navItem = document.querySelectorAll(".nav-item");
 
@@ -44,3 +44,19 @@ animeScroll();
 window.addEventListener("scroll", ()=>{
   animeScroll();
 })
+
+// Ativar carregamento no botão de enviar formulário para
+
+const btnEnviar = document.querySelector('#btn-enviar')
+const btnEnviarLoader = document.querySelector('#btn-enviar-loader')
+
+btnEnviar.addEventListener("click", ()=>{
+  btnEnviarLoader.style.display = "block";
+  btnEnviar.style.display = "none"
+})
+
+// Tira a mensagem de sucesso depois de 5 segundos
+
+setTimeout(() => {
+  document.querySelector('#alerta').style.display = 'none';
+}, 5000)
