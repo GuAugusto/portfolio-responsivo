@@ -374,38 +374,41 @@
                             <div class="row row-cols-1 row-cols-md-3 g-4">
                                 <div class="col">
                                     <div class="card">
-                                        <img src="../static/img/plataforma-gen.png" class="card-img-top"
+                                        <img src="../static/img/RedeTincap.png" class="card-img-top"
                                             alt="Plataforma educacional">
                                         <div class="card-body">
                                             <h5 class="card-title">Rede Social</h5>
                                             <p class="card-text">Projeto fullstack criado com MySQL, Spring e Angular,
-                                                acesso restrito, apenas pessoas autorizadas</p>
-                                            <div class="d-flex justify-content-center">
-                                                <a href="http://generationbrasil.online/#/login" target='_blank'
-                                                    class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
-                                            </div>
+                                                deploy realizado no Heroku e no Netlify</p>
+                                                <div class="d-flex justify-content-center">
+                                                    <a href="https://github.com/Jose-Araujo/back-end-TINCAP"
+                                                        target='_blank' class="btn btn-outline-dark me-3"><i
+                                                            class="bi bi-github"></i></a>
+                                                    <a href="https://tincap.netlify.app/#/home" target='_blank'
+                                                        class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="card">
-                                        <img src="../static/img/blog.png" class="card-img-top img-fluid w-100"
+                                        <img src="../static/img/BlogPessoal.png" class="card-img-top img-fluid w-100"
                                             alt="print do blog">
                                         <div class="card-body">
                                             <h5 class="card-title">Blog Pessoal</h5>
                                             <p class="card-text">Projeto fullstack criado com MySQL, Spring e Angular,
                                                 deploy realizado no Heroku e no Netlify</p>
                                             <div class="d-flex justify-content-center">
-                                                <a href="https://github.com/codethi/blogPessoal-front-back"
+                                                <a href="https://github.com/GuAugusto/blogpessoal-backEnd"
                                                     target='_blank' class="btn btn-outline-dark me-3"><i
                                                         class="bi bi-github"></i></a>
-                                                <a href="https://newbloggen.netlify.app/#/login" target='_blank'
+                                                <a href="https://blogdogu.netlify.app/#/entrar" target='_blank'
                                                     class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
+                               <!-- CARDS PORTIFOLIO IMPLEMENTAÇÕES FUTURAS  <div class="col">
                                     <div class="card">
                                         <img src="../static/img/pokedex.png" class="card-img-top img-fluid w-100"
                                             alt="print do blog">
@@ -488,6 +491,7 @@
                                 </div>
                             </div>
                         </div>
+                        -->
 
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolio"
@@ -522,14 +526,13 @@
 
                             <div class="email">
                                 <h4><i class="bi bi-envelope"></i> Email:</h4>
-                                <p>docencia.thiago@gmail.com</p>
+                                <p>gustavoaugusto@hotmail.com</p>
                             </div>
 
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.0602062854546!2d-46.
-                                55922744119819!3d-23.673804835210053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4307634be811%3A0xf6bad5e9058a3ead!2sAv.
-                                %20Senador%20Vergueiro%20-%20S%C3%A3o%20Bernardo%20do%20Campo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1630183618134!5m2!1spt-BR!2sbr"
-                                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.978539836605!2d-46.532331885019424!3d-
+                            23.712460384608168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce41ee35f384fd%3A0xee8bdca7df8ae110!2sAv
+                            .%20Luiz%20Pequini%20-%20S%C3%A3o%20Bernardo%20do%20Campo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1635181695199!5m2!1spt-BR!2sbr" 
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                                 class='w-100'></iframe>
                         </div>
                     </div>
@@ -584,10 +587,16 @@
         {% endfor %}
         {% endif %}
         {% endwith %}
-
-
-
     </main>
+    
+    <footer id="footer">
+        <div class="container">
+            <div class="text-center">
+                &copy; Copyrigth <strong>GuAugusto</strong>
+            </div>
+        </div>
+    </footer>
+    
     <script src="../static/Boostrap/js/bootstrap.bundle.min.js"></script>
     <script src="../static/script.js"></script>
 </body>

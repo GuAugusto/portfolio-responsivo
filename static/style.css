@@ -106,7 +106,7 @@ body {
 
 /*Estilizando o imagem de fundo do backgroud*/
 section#inicio {
-  background-image: url("./img/bannerPortifolio.png");
+  background-image: url("./img/Foto\ para\ o\ backgroud\ 7.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -320,4 +320,24 @@ i.menu-mobile {
   z-index: 10;
   top: 30px;
   right: 30px;
+}
+
+/*Estilizando o footer*/
+#footer{
+  padding: 15px;
+  color: #fff;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 9999;
+  background-color: #021124;
+}
+@media (max-width: 1012px) {
+  #footer{
+  position: static;
+  width: auto;
+  padding: 20px 15px;
+  }
 }
